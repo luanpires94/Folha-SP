@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*INICIO DO HEADER*/
+header {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #1E90FF;
+}
+
+.menu-icon {
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+}
+
+.header-paragraph {
+    margin-top: 40px;
+    color: #fff;
+}
+
+button {
+    height: 35px;
+    margin: 30px 20px;
+    width: 93px;
+    background-color: #fff;
+    color: #4682B4;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.image-button {
+    width: 25px;
+}
+/*FIM DO HEADER*/
+
+/*INICIO DE SECTION*/
+.block-image-slide {
+    background-image: url(assets/image_rotate.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 85vw;
+    height: 60vh;
+    margin: 5rem 0 0 6rem;
+}
+
+.image-slide-title {
+    color: #fff;
+    background-color: #1E90FF;
+    text-transform: uppercase;
+    width: 20rem;
+    font-size: 20px;
+    margin: 0 0 10px 0;
+}
+
+.image-slide-paragraph {
+    font-size: 25px;
+    color: #fff;
+    width: 24rem;
+}
+
+.block-slide-title {
+    display: inline-block;
+    margin: 18rem 0 0 2rem;
+}
+
+.block-slide-paragraph {
+    margin-left: 32px;
+}
+
+.block-arrow-left {
+    width: 50px;
+    height: 50px;
+    border: solid 1px #D3D3D3;
+    background-color: white;
+    border-radius: 50px;
+    position: absolute;
+    top: 330px;
+    left: 70px;
+}
+
+.arrow-left {
+    margin: 6px 0 0 10px;
+}
+
+.block-arrow-right {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50px;
+    border: solid 1px #D3D3D3;
+    position: absolute;
+    top: 330px;
+    right: 55px;
+}
+
+.arrow-right {
+    margin: 5px 0 0 11px;
+}
+/*FIM DE SECTION*/
+
+/*INICIO DE SECTION*/
+.top-title {
+    color: #104E8B;
+    margin: 50px 0 30px 125px;
+}
+
+.block-top-image {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.image-pindureta {
+    background-image: url(assets/highlight-01.png);
+    width: 360px;
+}
+
+.image-bolis {
+    background-image: url(assets/highlight-02.png);
+    width: 360px;
+}
+
+.image-sapien {
+    background-image: url(assets/highlight-03.png); 
+    width: 360px;   
+}
+
+.top-paragraph {
+    color: #fff;
+    background-color: rgba(255,0,0,0.7);
+    width: 95px;
+    height: 30px;
+    padding: 5px;
+    text-transform: uppercase;
+    margin-bottom: 9px;
+}
+
+.block-top-paragraph {
+    margin-top: 11rem;
+}
+/*FIM DE SECTION*/
+
+/*INICIO DE SECTION*/
+.divoltis-title {
+    color: #104E8B;
+    margin: 50px 0 30px 125px;
+}
+
+.block-divoltis {
+    display: flex;
+    width: 66vw;
+    flex-wrap: wrap;
+}
+
+.block-divoltis-aside {
+    display: flex;
+    justify-content: space-evenly;
+}
+/*FIM DE SECTION*/
