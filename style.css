@@ -106,7 +106,7 @@ button {
 /*INICIO DE SECTION*/
 .top-title {
     color: #104E8B;
-    margin: 50px 0 30px 125px;
+    margin: 50px 0 30px 95px;
 }
 
 .block-top-image {
@@ -147,17 +147,38 @@ button {
 /*INICIO DE SECTION*/
 .divoltis-title {
     color: #104E8B;
-    margin: 50px 0 30px 125px;
+    margin: 50px 0 30px 95px;
 }
 
 .block-divoltis {
     display: flex;
-    width: 66vw;
+    width: 61vw;
     flex-wrap: wrap;
+}
+
+.block-divoltis-consetis-matis {
+    border-bottom: solid 1px gray;
+    margin-bottom: 2rem;
+    height: 310px;
+}
+
+.block-divoltis-img-paragraph {
+    margin-left: 35px;
+    border-bottom: solid 1px gray;
+    margin-bottom: 2rem;
+    height: 310px;
 }
 
 .block-divoltis-aside {
     display: flex;
     justify-content: space-evenly;
+}
+
+.image-matis {
+    width: 360px;
+}
+
+.divoltis-paragraph {
+    width: 310px;
 }
 /*FIM DE SECTION*/
