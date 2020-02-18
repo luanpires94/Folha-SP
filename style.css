@@ -145,7 +145,7 @@ button {
 /*FIM DE SECTION*/
 
 /*INICIO DE SECTION*/
-.divoltis-title {
+.divoltis-porris-title {
     color: #104E8B;
     margin: 50px 0 30px 95px;
 }
@@ -180,5 +180,35 @@ button {
 
 .divoltis-paragraph {
     width: 310px;
+    color: #104E8B;
+}
+
+.image-divinis {
+    width: 360px;
+    height: 202px;
+}
+
+.divoltis-title {
+    color: #1E90FF;
+}
+/*FIM DE SECTION*/
+
+/*INICIO DE SECTION*/
+.block-divs {
+    display: flex;
+    justify-content: space-around;
+}
+
+.block-border {
+    border-bottom: solid 1px gray;
+    margin: 5px 0 20px 0;
+}
+.block-border p {
+    color: #104E8B;
+}
+
+.paisis-title {
+    color: #1E90FF;
+    margin: 0 0 20px 0;
 }
 /*FIM DE SECTION*/
