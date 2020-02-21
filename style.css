@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 /*INICIO DO HEADER*/
@@ -33,79 +34,126 @@ button {
     text-transform: uppercase;
 }
 
+.link-facebook {
+    color: #4682B4;
+}
+.link-twitter {
+    color: #1E90FF;
+}
+
 .image-button {
     width: 25px;
 }
 /*FIM DO HEADER*/
 
-/*INICIO DE SECTION*/
-.block-image-slide {
-    background-image: url(assets/image_rotate.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 85vw;
-    height: 60vh;
-    margin: 5rem 0 0 6rem;
-}
-
-.image-slide-title {
-    color: #fff;
+/*SLIDE*/
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: 5rem 0 0 12rem;
+  }
+  
+.slide-title {
+    margin: 1rem;
     background-color: #1E90FF;
+    width: 254px;
+    font-size: 18px;
+    padding: 3px;
+    font-weight: 600;
     text-transform: uppercase;
-    width: 20rem;
-    font-size: 20px;
-    margin: 0 0 10px 0;
 }
 
-.image-slide-paragraph {
-    font-size: 25px;
-    color: #fff;
-    width: 24rem;
+.slide-paragraph {
+    font-size: 22px;
+    margin-left: 1rem;
+    font-weight: 600;
 }
 
-.block-slide-title {
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /*previous button*/
+  .prev {
+    position: absolute;
+    top: 10rem;
+    color: #000;
+    width: 43px;
+    border: solid 1px gray;
+    left: -1rem;
+    border-radius: 50px;
+    user-select: none;
+    background-color: #fff;
+    cursor: pointer;
+  }
+
+  .arrow-image {
+      margin-left: 7px;
+  }
+  
+  /*next button*/
+  .next {
+    position: absolute;
+    top: 10rem;
+    color: #000;
+    width: 43px;
+    border: solid 1px gray;
+    right: -1rem;
+    border-radius: 50px;
+    user-select: none;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  
+  /* block text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
     display: inline-block;
-    margin: 18rem 0 0 2rem;
-}
-
-.block-slide-paragraph {
-    margin-left: 32px;
-}
-
-.block-arrow-left {
-    width: 50px;
-    height: 50px;
-    border: solid 1px #D3D3D3;
-    background-color: white;
-    border-radius: 50px;
-    position: absolute;
-    top: 330px;
-    left: 70px;
-}
-
-.arrow-left {
-    margin: 6px 0 0 10px;
-}
-
-.block-arrow-right {
-    width: 50px;
-    height: 50px;
-    background-color: white;
-    border-radius: 50px;
-    border: solid 1px #D3D3D3;
-    position: absolute;
-    top: 330px;
-    right: 55px;
-}
-
-.arrow-right {
-    margin: 5px 0 0 11px;
-}
-/*FIM DE SECTION*/
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #1E90FF;
+  }
+  
+  /*animation*/
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+/*SLIDE*/
 
 /*INICIO DE SECTION*/
 .top-title {
-    color: #104E8B;
+    color: #36648B;
     margin: 50px 0 30px 95px;
 }
 
@@ -146,7 +194,7 @@ button {
 
 /*INICIO DE SECTION*/
 .divoltis-porris-title {
-    color: #104E8B;
+    color: #36648B;
     margin: 50px 0 30px 95px;
 }
 
@@ -180,7 +228,7 @@ button {
 
 .divoltis-paragraph {
     width: 310px;
-    color: #104E8B;
+    color: #36648B;
 }
 
 .image-divinis {
@@ -197,14 +245,27 @@ button {
 .block-divs {
     display: flex;
     justify-content: space-around;
+    height: 100vh;
+}
+
+.block-border-title {
+    border-bottom: solid 1px gray;
+    margin: 0 0 1rem 0;
+}
+.block-border-title p {
+    color: #36648B;
 }
 
 .block-border {
     border-bottom: solid 1px gray;
-    margin: 5px 0 20px 0;
+    margin: 2.5rem 0 0 0;
 }
 .block-border p {
-    color: #104E8B;
+    color: #36648B;
+}
+
+.block-border-paragraph {
+    margin-bottom: 10px;
 }
 
 .paisis-title {
@@ -212,3 +273,74 @@ button {
     margin: 0 0 20px 0;
 }
 /*FIM DE SECTION*/
+
+/*INICIO DE SECTION*/
+.picture-title {
+    color: rgba(255,0,0,0.7);
+}
+
+.block-picture-img-paragraph {
+    display: flex;
+    margin-top: 20px;
+}
+
+.block-subtitle-paragraph {
+    margin-left: 20px;
+}
+
+.picture-subtitle {
+    color: rgba(255,0,0,0.7);
+    text-transform: uppercase;
+}
+
+.picture-paragraph {
+    color: #36648B;
+    width: 160px;
+}
+/*FIM DE SECTION*/
+
+/*INICIO DE SECTION*/
+.mobile-ads {
+    display: none;
+}
+
+.back-topo {
+    background-color: #1E90FF;
+    height: 40px;
+}
+
+.back-topo-link {
+    color: #fff;
+}
+
+.back-topo-paragraph {
+    text-align: end;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 10px;
+}
+/*FIM DE SECTION*/
+
+/*INICIO DO FOOTER*/
+footer {
+    background-color: #283c4f;
+}
+
+.block-footer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-title {
+    color: #fff;
+    font-size: 50px;
+    margin-top: 1.5rem;
+}
+
+.footer-paragraph {
+    width: 50rem;
+    color: #fff;
+    margin-top: 3rem;
+}
+
+/*FIM DO FOOTER*/

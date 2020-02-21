@@ -1,125 +1,205 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
-    <title>Folha de SP</title>
-</head>
-<body>
-    <header>
-        <img class="menu-icon" src="assets/menu-icon.png" alt="menu">
-        <img src="assets/logo.png" alt="logo">
-        <p class="header-paragraph">O site de teste para <strong>novos webs</strong></p>
-        <div>
-            <button>
-                <img class="image-button" src="assets/facebook.svg" alt="">curtir
-            </button>
-            <button>
-                <img class="image-button" src="assets/twitter.svg" alt="">seguir
-            </button>
-        </div>
-    </header>
-    <main>
-        <section>
-            <div class="block-image-slide">
-                <div class="block-slide-title">
-                    <h1 class="image-slide-title">mussum ipsum cacilds</h1>
-                </div>
-                <div class="block-slide-paragraph">
-                    <p class="image-slide-paragraph">Pra lá,depois divoltis porris,paradis.
-                        Paisis,filhis,espiritis santis</p>
-                </div>
-                <div class="block-arrow-left">
-                    <img class="arrow-left" src="assets/arrow_left-icon.png" alt="arrow left">
-                </div>
-                <div class="block-arrow-right">
-                    <img class="arrow-right" src="assets/arrow_right-icon.png" alt="arrow right">
-                </div>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="style.css">
+        <title>Folha de SP</title>
+    </head>
+    <body>
+        <header id="header">
+            <img class="menu-icon" src="assets/menu-icon.png" alt="menu">
+            <img src="assets/logo.png" alt="logo-folha">
+            <p class="header-paragraph">O site de teste para <strong>novos webs</strong></p>
+            <div>
+                <a class="link-facebook" target="_blank" href="https://www.facebook.com/folhadesp/">
+                    <button>
+                        <img class="image-button" src="assets/facebook.svg" alt="button facebook">curtir
+                    </button>
+                </a>
+                <a class="link-twitter" target="_blank" href="https://twitter.com/folha?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+                    <button>
+                        <img class="image-button" src="assets/twitter.svg" alt="button twitter">seguir
+                    </button>
+                </a>
             </div>
-        </section>
-        <section>
-            <h1 class="top-title">top cacilds</h1>
-            <div class="block-top-image">
-                <div class="image-pindureta">
-                    <div class="block-top-paragraph">
-                        <p class="top-paragraph">pindureta</p>
+        </header>
+        <main>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="assets/image_rotate.png" style="width:100%" alt="image slide">
+                    <div class="text">
+                        <h1 class="slide-title">mussum ipsum cacilds</h1>
+                        <p class="slide-paragraph">Pra lá, depois divoltis porris, paradis.</p>
+                        <p class="slide-paragraph">Paisis, filhis, espiritis santis</p>
                     </div>
                 </div>
-                <div class="image-bolis">
-                    <div class="block-top-paragraph">
-                        <p class="top-paragraph">bolis</p>
+                <div class="mySlides fade">
+                    <img src="assets/rotate2.jpg" style="width:100%" alt="image slide">
+                    <div class="text">
+                        <h2 class="slide-title">mussum ipsum cacilds</h2>
+                        <p class="slide-paragraph">Pra lá, depois divoltis porris, paradis.</p>
+                        <p class="slide-paragraph">Paisis, filhis, espiritis santis</p>
                     </div>
                 </div>
-                <div class="image-sapien">
-                    <div class="block-top-paragraph">
-                        <p class="top-paragraph">sapien</p>
+                <div class="mySlides fade">
+                    <img src="assets/rotate3.jpg" style="width:100%" alt="image slide">
+                    <div class="text">
+                        <h2 class="slide-title">mussum ipsum cacilds</h2>
+                        <p class="slide-paragraph">Pra lá, depois divoltis porris, paradis.</p>
+                        <p class="slide-paragraph">Paisis, filhis, espiritis santis</p>
                     </div>
                 </div>
+                <a class="prev" onclick="plusSlides(-1)">
+                    <img class="arrow-image" src="assets/arrow_left-icon.png" alt="arrow left">
+                </a>
+                <a class="next" onclick="plusSlides(1)">
+                    <img class="arrow-image" src="assets/arrow_right-icon.png" alt="arrow right">
+                </a>
             </div>
-        </section>
-        <section>
-            <h1 class="divoltis-porris-title">divoltis porris</h1>
-            <div class="block-divoltis-aside">
-                <div class="block-divoltis">
-                    <div class="block-divoltis-consetis-matis">
-                        <img src="assets/divoltis_porris-01.png" alt="mussum">
-                        <h1 class="divoltis-title">consetis</h1>
-                        <p class="divoltis-paragraph">manduma pindureta quium dia nois paga.</p>
-                        <p class="divoltis-paragraph">Sapien in monti palavris</p>
+            <br>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+            <section>
+                <h2 class="top-title">top cacilds</h2>
+                <div class="block-top-image">
+                    <div class="image-pindureta">
+                        <div class="block-top-paragraph">
+                            <p class="top-paragraph">pindureta</p>
+                        </div>
                     </div>
-                    <div class="block-divoltis-img-paragraph">
-                        <img src="assets/divoltis_porris-02.png" alt="serie">
-                        <h1 class="divoltis-title">aenean</h1>
-                        <p class="divoltis-paragraph">Pellentesque laoreet mé vel lectus scelerisque interdum cursus</p>
+                    <div class="image-bolis">
+                        <div class="block-top-paragraph">
+                            <p class="top-paragraph">bolis</p>
+                        </div>
                     </div>
-                    <div class="block-divoltis-consetis-matis">
-                        <img class="image-matis" src="assets/divoltis_porris-03.png" alt="ator">
-                        <h1 class="divoltis-title">matis</h1>
-                        <p class="divoltis-paragraph">Etiam ac mauris lectus,non scelerisque augue.</p>
-                        <p class="divoltis-paragraph">Aenean justo massa.</p>
-                    </div>
-                    <div class="block-divoltis-img-paragraph">
-                        <img class="image-divinis" src="assets/divoltis_porris-04.png" alt="cevada">
-                        <h1 class="divoltis-title">divinis</h1>
-                        <p class="divoltis-paragraph">Suco de cevaddiss,é um leite divinis,qui tem lupuliz,matis</p>
+                    <div class="image-sapien">
+                        <div class="block-top-paragraph">
+                            <p class="top-paragraph">sapien</p>
+                        </div>
                     </div>
                 </div>
-                <aside>
-                    <img src="assets/ads-300x600.png" alt="ads">
-                </aside>
-            </div>
-        </section>
-        <section class="block-divs">
+            </section>
+            <section>
+                <h2 class="divoltis-porris-title">divoltis porris</h2>
+                <div class="block-divoltis-aside">
+                    <div class="block-divoltis">
+                        <div class="block-divoltis-consetis-matis">
+                            <img src="assets/divoltis_porris-01.png" alt="mussum">
+                            <h2 class="divoltis-title">consetis</h2>
+                            <p class="divoltis-paragraph">manduma pindureta quium dia nois paga.</p>
+                            <p class="divoltis-paragraph">Sapien in monti palavris</p>
+                        </div>
+                        <div class="block-divoltis-img-paragraph">
+                            <img src="assets/divoltis_porris-02.png" alt="serie">
+                            <h2 class="divoltis-title">aenean</h2>
+                            <p class="divoltis-paragraph">Pellentesque laoreet mé vel lectus scelerisque interdum cursus</p>
+                        </div>
+                        <div class="block-divoltis-consetis-matis">
+                            <img class="image-matis" src="assets/divoltis_porris-03.png" alt="ator">
+                            <h2 class="divoltis-title">matis</h2>
+                            <p class="divoltis-paragraph">Etiam ac mauris lectus,non scelerisque augue.</p>
+                            <p class="divoltis-paragraph">Aenean justo massa.</p>
+                        </div>
+                        <div class="block-divoltis-img-paragraph">
+                            <img class="image-divinis" src="assets/divoltis_porris-04.png" alt="cevada">
+                            <h2 class="divoltis-title">divinis</h2>
+                            <p class="divoltis-paragraph">Suco de cevaddiss,é um leite divinis,qui tem lupuliz,matis</p>
+                        </div>
+                    </div>
+                    <aside>
+                        <img src="assets/ads-300x600.png" alt="ads">
+                    </aside>
+                </div>
+            </section>
+            <section class="block-divs">
                 <div>
-                <div class="block-border">
-                    <h1 class="paisis-title">paisis,filhis,espiritis santis</h1>
-                    <p>Mussum ipsum cacilds,vidis litro abertis.</p>
-                    <p>Consetis adipiscings elitis</p>
+                    <div class="block-border-title">
+                        <h2 class="paisis-title">paisis,filhis,espiritis santis</h2>
+                        <p>Mussum ipsum cacilds,vidis litro abertis.</p>
+                        <p class="block-border-paragraph">Consetis adipiscings elitis</p>
+                    </div>
+                    <div class="block-border">
+                        <p>Mussum ipsum cacilds,vidis litro abertis.</p>
+                        <p class="block-border-paragraph">Consetis adipiscings elitis</p>
+                    </div>
+                    <div class="block-border">
+                        <p class="block-border-paragraph">Mussum ipsum cacilds,vidis litro abertis</p>
+                    </div>
+                    <div class="block-border">
+                        <p>Mussum ipsum cacilds,vidis litro abertis.</p>
+                        <p class="block-border-paragraph">Consetis adipiscings elitis</p>
+                    </div>
+                    <div class="block-border">
+                        <p class="block-border-paragraph">Mussum ipsum cacilds,vidis litro abertis</p>
+                    </div>
                 </div>
-                <div class="block-border">
-                    <p>Mussum ipsum cacilds,vidis litro abertis.</p>
-                    <p>Consetis adipiscings elitis</p>
+                <div>
+                    <div>
+                        <h2 class="picture-title">se pirulitá</h2>
+                        <div class="block-picture-img-paragraph">
+                            <img src="assets/se_pirulita-01.png" alt="pintura">
+                            <div class="block-subtitle-paragraph">
+                                <p class="picture-subtitle">nam liber</p>
+                                <p class="picture-paragraph">Casamentiss faiz malandris se pirulitá</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="block-picture-img-paragraph">
+                            <img src="assets/se_pirulita-02.png" alt="pintura">
+                            <div class="block-subtitle-paragraph">
+                                <p class="picture-subtitle">gostis</p>
+                                <p class="picture-paragraph">Aenean ut ante turpis.</p>
+                                <p class="picture-paragraph">Pellentesque laoreet mé</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="block-border">
-                    <p>Mussum ipsum cacilds,vidis litro abertis</p>
+                <div>
+                    <h2 class="picture-title">suco de cevadiss</h2>
+                    <div class="block-picture-img-paragraph">
+                        <img src="assets/suco_de_cevadiss-01.png" alt="pintura">
+                        <div class="block-subtitle-paragraph">
+                            <p class="picture-subtitle">interagi</p>
+                            <p class="picture-paragraph">é um leite divinis,qui tem lupuliz,matis, aguis e fermentis</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="block-picture-img-paragraph">
+                            <img src="assets/suco_de_cevadiss-02.png" alt="pintura">
+                            <div class="block-subtitle-paragraph">
+                                <p class="picture-subtitle">gostis</p>
+                                <p class="picture-paragraph">Aenean ut ante turpis.</p>
+                                <p class="picture-paragraph">Pellentesque laoreet mé</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="block-border">
-                    <p>Mussum ipsum cacilds,vidis litro abertis.</p>
-                    <p>Consetis adipiscings elitis</p>
-                </div>
-                <div class="block-border">
-                    <p>Mussum ipsum cacilds,vidis litro abertis</p>
-                </div>
+            </section>
+            <div class="mobile-ads">
+                <img src="assets/ads-300x250.png" alt="ads">
             </div>
-                <div>
-                    <h1>se pirulitá</h1>
-                </div>
-                <div>
-                    <h1>suco de cevadiss</h1>
-                </div>
-        </section>
-    </main>
-</body>
+            <div class="back-topo">
+                <a class="back-topo-link" href="#header">
+                    <p class="back-topo-paragraph">voltar ao topo 
+                        <img src="assets/arrow_top-icon.png" alt="seta pra cima">
+                    </p>
+                </a>
+            </div>
+        </main>
+        <footer>
+            <div class="block-footer">
+                <img src="assets/logo_footer.png" alt="logo-folha">
+                <p class="footer-paragraph">Copyright Folha de S.Paulo. Todos os direitos reservados. É proibida a
+                    reprodução do conteúdo desta página em qualquer meio de comunicação, eletrônico ou impresso, sem
+                    autorização escrita da Folhapress (<u>pesquisa@folhapress.com.br</u>).</p>
+            </div>
+        </footer>
+        <script src="index.js"></script>
+    </body>
 </html>
