@@ -9,17 +9,27 @@
     </head>
     <body>
         <header id="header">
-            <img class="menu-icon" src="assets/menu-icon.png" alt="menu">
+            <div>
+                <button onclick="myFunction()" class="dropbtn">
+                    <img class="menu-image" src="assets/menu-icon.png" alt="menu">
+                </button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="#top-cacilds">top cacildis</a>
+                  <a href="#divoltis">divoltis porris</a>
+                  <a href="#paisis">paisis,filhis,espiritis santis
+                </a>
+                </div>
+              </div>
             <img src="assets/logo.png" alt="logo-folha">
             <p class="header-paragraph">O site de teste para <strong>novos webs</strong></p>
             <div>
                 <a class="link-facebook" target="_blank" href="https://www.facebook.com/folhadesp/">
-                    <button>
+                    <button class="button-social">
                         <img class="image-button" src="assets/facebook.svg" alt="button facebook">curtir
                     </button>
                 </a>
                 <a class="link-twitter" target="_blank" href="https://twitter.com/folha?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
-                    <button>
+                    <button class="button-social">
                         <img class="image-button" src="assets/twitter.svg" alt="button twitter">seguir
                     </button>
                 </a>
@@ -28,7 +38,7 @@
         <main>
             <div class="slideshow-container">
                 <div class="mySlides fade">
-                    <img src="assets/image_rotate.png" style="width:100%" alt="image slide">
+                    <img class="image-slide" src="assets/image_rotate.png" alt="image slide">
                     <div class="text">
                         <h1 class="slide-title">mussum ipsum cacilds</h1>
                         <p class="slide-paragraph">Pra lá, depois divoltis porris, paradis.</p>
@@ -36,7 +46,7 @@
                     </div>
                 </div>
                 <div class="mySlides fade">
-                    <img src="assets/rotate2.jpg" style="width:100%" alt="image slide">
+                    <img class="image-slide" src="assets/rotate2.jpg" alt="image slide">
                     <div class="text">
                         <h2 class="slide-title">mussum ipsum cacilds</h2>
                         <p class="slide-paragraph">Pra lá, depois divoltis porris, paradis.</p>
@@ -44,7 +54,7 @@
                     </div>
                 </div>
                 <div class="mySlides fade">
-                    <img src="assets/rotate3.jpg" style="width:100%" alt="image slide">
+                    <img class="image-slide" src="assets/rotate3.jpg" alt="image slide">
                     <div class="text">
                         <h2 class="slide-title">mussum ipsum cacilds</h2>
                         <p class="slide-paragraph">Pra lá, depois divoltis porris, paradis.</p>
@@ -65,7 +75,7 @@
                 <span class="dot" onclick="currentSlide(3)"></span>
             </div>
             <section>
-                <h2 class="top-title">top cacilds</h2>
+                <h2 id="top-cacilds" class="top-title">top cacilds</h2>
                 <div class="block-top-image">
                     <div class="image-pindureta">
                         <div class="block-top-paragraph">
@@ -85,17 +95,17 @@
                 </div>
             </section>
             <section>
-                <h2 class="divoltis-porris-title">divoltis porris</h2>
+                <h2 id="divoltis" class="divoltis-porris-title">divoltis porris</h2>
                 <div class="block-divoltis-aside">
                     <div class="block-divoltis">
                         <div class="block-divoltis-consetis-matis">
-                            <img src="assets/divoltis_porris-01.png" alt="mussum">
+                            <img class="image-consetis" src="assets/divoltis_porris-01.png" alt="mussum">
                             <h2 class="divoltis-title">consetis</h2>
                             <p class="divoltis-paragraph">manduma pindureta quium dia nois paga.</p>
                             <p class="divoltis-paragraph">Sapien in monti palavris</p>
                         </div>
                         <div class="block-divoltis-img-paragraph">
-                            <img src="assets/divoltis_porris-02.png" alt="serie">
+                            <img class="image-aenean" src="assets/divoltis_porris-02.png" alt="serie">
                             <h2 class="divoltis-title">aenean</h2>
                             <p class="divoltis-paragraph">Pellentesque laoreet mé vel lectus scelerisque interdum cursus</p>
                         </div>
@@ -112,15 +122,15 @@
                         </div>
                     </div>
                     <aside>
-                        <img src="assets/ads-300x600.png" alt="ads">
+                        <img class="desktop-ads" src="assets/ads-300x600.png" alt="ads">
                     </aside>
                 </div>
             </section>
             <section class="block-divs">
-                <div>
+                <div class="container-divs">
                     <div class="block-border-title">
-                        <h2 class="paisis-title">paisis,filhis,espiritis santis</h2>
-                        <p>Mussum ipsum cacilds,vidis litro abertis.</p>
+                        <h2 id="paisis" class="paisis-title">paisis,filhis,espiritis santis</h2>
+                        <p class="block-border-paragraph">Mussum ipsum cacilds,vidis litro abertis.</p>
                         <p class="block-border-paragraph">Consetis adipiscings elitis</p>
                     </div>
                     <div class="block-border">
@@ -138,7 +148,7 @@
                         <p class="block-border-paragraph">Mussum ipsum cacilds,vidis litro abertis</p>
                     </div>
                 </div>
-                <div>
+                <div class="container-picture">
                     <div>
                         <h2 class="picture-title">se pirulitá</h2>
                         <div class="block-picture-img-paragraph">
@@ -160,7 +170,7 @@
                         </div>
                     </div>
                 </div>
-                <div>
+                <div class="container-picture">
                     <h2 class="picture-title">suco de cevadiss</h2>
                     <div class="block-picture-img-paragraph">
                         <img src="assets/suco_de_cevadiss-01.png" alt="pintura">
@@ -182,7 +192,7 @@
                 </div>
             </section>
             <div class="mobile-ads">
-                <img src="assets/ads-300x250.png" alt="ads">
+                <img class="image-ads-mobile" src="assets/ads-300x250.png" alt="ads">
             </div>
             <div class="back-topo">
                 <a class="back-topo-link" href="#header">
@@ -194,7 +204,7 @@
         </main>
         <footer>
             <div class="block-footer">
-                <img src="assets/logo_footer.png" alt="logo-folha">
+                <img class="image-footer" src="assets/logo_footer.png" alt="logo-folha">
                 <p class="footer-paragraph">Copyright Folha de S.Paulo. Todos os direitos reservados. É proibida a
                     reprodução do conteúdo desta página em qualquer meio de comunicação, eletrônico ou impresso, sem
                     autorização escrita da Folhapress (<u>pesquisa@folhapress.com.br</u>).</p>
