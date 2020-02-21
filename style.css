@@ -169,6 +169,11 @@ header {
         width: 26rem;
     }
 }
+@media (max-width: 375px) {
+    .image-slide {
+        width: 23rem;
+    }
+}
 @media (max-width: 320px) {
     .image-slide {
         width: 19rem;
@@ -356,6 +361,11 @@ header {
     .block-divoltis {
         width: 81vw;
         margin-left: 4rem;
+    }
+}
+@media (max-width: 375px) {
+    .block-divoltis {
+        margin-left: 2rem;
     }
 }
 @media (max-width: 320px) {
@@ -580,6 +590,11 @@ header {
 @media (max-width: 425px) {
     .image-ads-mobile {
         margin: 8rem 0 4rem 4rem;
+    }
+}
+@media (max-width: 375px) {
+    .image-ads-mobile {
+        margin: 8rem 0 4rem 2.5rem;
     }
 }
 @media (max-width: 320px) {
