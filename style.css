@@ -19,11 +19,6 @@ header {
 .menu-image {
     margin-top: 2rem;
 }
-@media (max-width: 768px) {
-    .menu-image {
-        margin-top: 0;
-    }
-}
 
 #menu-icon {
     width: 50px;
@@ -79,7 +74,7 @@ header {
     }
 }
   
-.dropdown-content {
+#myDropdown {
     display: none;
     position: absolute;
     background-color: #1E90FF;
@@ -87,14 +82,19 @@ header {
 }
   
 .dropdown-content a {
+    display: block;
     color: #fff;
     padding: 12px 16px;
     text-decoration: none;
-    display: block;
 }
 
-.show {
-      display:block;
+#myDropdown.show {
+    display: flex !important;
+    flex-direction: column;
+    position: absolute;
+    z-index: 1;
+    background-color: #1E90FF;
+    text-transform: uppercase;
 }
 /*FIM DO MENU*/
 /*FIM DO HEADER*/
@@ -103,7 +103,7 @@ header {
 .slideshow-container {
     max-width: 1000px;
     position: relative;
-    margin: 5rem 0 0 14rem;
+    margin: 5rem 0 0 9rem;
 }
 @media (max-width: 1024px) {
     .slideshow-container {
