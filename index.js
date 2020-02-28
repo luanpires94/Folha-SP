@@ -30,7 +30,5 @@ function showSlides(n) {
 /*MENU*/
 function myFunction() {
   var element = document.getElementById("myDropdown");
-  element.classList.add("show");
+  element.classList.toggle("show");
 }
-  
-  /*FIM DO MENU*/
