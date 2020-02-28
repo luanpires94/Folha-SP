@@ -17,6 +17,7 @@ header {
 }
 
 .menu-image {
+    cursor: pointer;
     margin-top: 2rem;
 }
 
@@ -77,6 +78,10 @@ header {
     z-index: 1;
     background-color: #1E90FF;
     text-transform: uppercase;
+}
+
+.link-menu-dropdown {
+    color: #fff;
 }
 /*FIM DO MENU*/
 /*FIM DO HEADER*/
