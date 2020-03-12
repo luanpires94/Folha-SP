@@ -82,6 +82,10 @@ header {
 
 .link-menu-dropdown {
     color: #fff;
+    margin-top: 5px;
+}
+.link-menu-dropdown:hover {
+    color: #000;
 }
 /*FIM DO MENU*/
 /*FIM DO HEADER*/
@@ -499,6 +503,11 @@ header {
     color: #1E90FF;
     margin: 0 0 20px 0;
 }
+@media (max-width: 425px) {
+    .paisis-title {
+        text-align: center;
+    }
+}
 /*FIM DE SECTION*/
 
 /*INICIO DE SECTION*/
@@ -619,6 +628,9 @@ footer {
     }
 }
 
+.image-footer {
+    width: 180px;
+}
 @media (max-width: 768px) {
     .image-footer {
         display: none;

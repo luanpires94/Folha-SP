@@ -25,10 +25,11 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
-/*FIM DO SLIDE*/
+/*SLIDE*/
 
 /*MENU*/
 function myFunction() {
   var element = document.getElementById("myDropdown");
   element.classList.toggle("show");
 }
+/*MENU*/
